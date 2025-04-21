@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+	<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+<div>
+	<h2 >welcome to our Employee Management System </h2>
+	
+	<div>
+<p>You can See all the employee details here!</p>
+  </div>
+  <!--<a th:href="@{/logout}">Logout</a>-->
+  <form th:action="@{/logout}" method="get">
+    <button type="submit">Logout</button>
+</form>
+</body>
+</html>
